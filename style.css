@@ -78,7 +78,7 @@ main{
     padding-top: 100px;
 }
 
-#title-pg img{
+img{
     display: grid;
     place-items: center;
     object-fit: cover;
@@ -132,7 +132,7 @@ summary{
     background-color: #EBF3E0;
     width:100%;
     min-height: 35px;
-    
+}
 
 .wrapper:hover{
     color:#ffcece;
