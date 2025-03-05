@@ -48,7 +48,7 @@ header{
     flex-shrink: 0;
     color: #000;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter !important;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -70,7 +70,7 @@ main{
 #title-pg h1{
     color: #000;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter' !important; 
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
@@ -78,17 +78,17 @@ main{
     padding-top: 100px;
 }
 
-img{
-    display: grid;
-    place-items: center;
+#title-pg img{
+    display: inline-flex;
+    align-self: center;
     object-fit: cover;
     width:100%;
 }
 
 h1{
-    font-family: Inter;
+    font-family: Inter !important;
     color: #000;
-    padding: 11px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -101,7 +101,7 @@ p{
 #mrp h1{
     color: #000;
     text-align: center;
-    font-family: Inter;
+    font-family:  !important;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -114,14 +114,19 @@ summary{
     color: black;
     font-weight: bold;
     cursor: pointer;
-    padding: 5px;
+    padding-left: 20px;
+    padding-top: 12.5px;
 }
 
+summary:hover{
+    color:#68b844;
+}
 .wrapper{
     display:grid;
     grid-template-columns: 100%;
     row-gap: 25px;
-    justify-content: left;
+    align-items: center;
+    justify-items: center;
     padding-inline: 50px;
     
     transition: all .2s ease-in;
@@ -130,13 +135,22 @@ summary{
     display: inline-block;
     border-radius: 15px;
     background-color: #EBF3E0;
-    width:100%;
-    min-height: 35px;
+    width:50%;
+    min-height: 50px;
+    object-fit: center;
+    align-items: center;
+    vertical-align: center;
 }
 
-.wrapper:hover{
-    color:#ffcece;
+#reflection-box img{
+    display: grid;
+    place-items: center;
+    object-fit:contain;
+    max-width:33vw;
+    padding: 10px;
+    object-position: center;
 }
+
 
 .row{
     display:flex;
