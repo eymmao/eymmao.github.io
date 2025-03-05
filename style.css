@@ -133,7 +133,7 @@ summary:hover{
 }
 #reflection-box{
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 200px;
     background-color: #EBF3E0;
     width:50%;
     min-height: 50px;
